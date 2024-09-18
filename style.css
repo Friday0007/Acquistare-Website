@@ -1,0 +1,149 @@
+* {
+  /* font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif; */
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.gradient-navbar {
+  background: linear-gradient(to right, #000000, #00aabc, #00aabc2e);
+}
+
+.navbar__Logo {
+  width: 10rem;
+}
+
+.Hero__Container {
+  position: relative;
+}
+
+.Hero__Container__image {
+  width: 100%;
+  height: auto;
+}
+
+.active {
+  color: #00aabc;
+}
+
+.gradient-overlay {
+  background: #04849259;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Page 2 */
+.page2 {
+  background: linear-gradient(to right, #000000, #00aabc);
+  padding: 10rem 3rem;
+}
+
+.motion__element {
+  width: 30rem;
+}
+
+/* Mission Section */
+.mission__container {
+  position: relative;
+}
+
+.mission__section {
+  height: 35rem;
+}
+
+.custom__line {
+  padding: 10rem 0rem;
+}
+
+.mission__image {
+  width: 50rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+/* Carousel */
+
+.heading__line {
+  width: 35%;
+}
+
+.mission__card {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 50%;
+  position: absolute;
+  left: 2rem;
+  top: 70%;
+  z-index: 1000;
+}
+
+.mission__content, .vision__content {
+  background-color: #005862;
+  font-size: 1.2rem;
+}
+
+.mission__title,.vision__title {
+  font-size: 5rem;
+  font-family: "Gilroy-Medium";
+}
+
+.btn {
+  background-color: #00aabc;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Vision Page */
+.vision__container {
+  position: relative;
+  margin-top: 60rem;
+}
+
+.vision__section {
+  height: 45rem;
+}
+
+.vision__image {
+  width: 50rem;
+  position: absolute;
+  top: 70%;
+  margin-left: 2rem;
+}
+
+.vision__card {
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    right: 2rem;
+  }
+
+
+/* Footer */
+.footer {
+    margin-top: 50rem;
+    background: linear-gradient(to right, #000000, #00aabc);
+}
+
+.contact__heading {
+    letter-spacing: 0.8rem;
+}
+
+.contact__description {
+    width: 50%;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
