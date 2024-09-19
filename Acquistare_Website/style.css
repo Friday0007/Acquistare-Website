@@ -1,0 +1,400 @@
+* {
+  /* font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif; */
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+/* About Us CSS---- */
+
+.gradient-navbar {
+  background: linear-gradient(to right, #000000, #00aabc, #00aabc2e);
+}
+
+.navbar__Logo {
+  width: 10rem;
+}
+
+.Hero__Container {
+  position: relative;
+}
+
+.nav__icons {
+  width: 1.1rem;
+  margin-right: 1rem;
+}
+
+.magnify {
+  width: 1.4rem;
+}
+
+.Hero__Container__image {
+  width: 100%;
+  height: auto;
+}
+
+.active {
+  color: #00aabc;
+}
+
+.gradient-overlay {
+  background: #04849259;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Page 2 */
+.page2 {
+  background: linear-gradient(to right, #000000, #00aabc);
+  padding: 10rem 3rem;
+}
+
+.motion__element {
+  width: 30rem;
+}
+
+/* Mission Section */
+.mission__container {
+  position: relative;
+}
+
+.mission__section {
+  height: 35rem;
+}
+
+.custom__line {
+  padding: 10rem 0rem;
+}
+
+.mission__image {
+  width: 50rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+/* Carousel */
+
+.heading__line {
+  width: 35%;
+}
+
+.mission__card {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 50%;
+  position: absolute;
+  left: 2rem;
+  top: 70%;
+  z-index: 1000;
+}
+
+.mission__content,
+.vision__content, .approach__content {
+  background-color: #005862;
+  font-size: 1.2rem;
+}
+
+.mission__title,
+.vision__title, .approach__title {
+  font-size: 5rem;
+  font-family: "Gilroy-Medium";
+}
+
+.btn {
+  background-color: #00aabc;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Vision Page */
+.vision__container {
+  position: relative;
+  margin-top: 60rem;
+}
+
+.vision__section {
+  height: 45rem;
+}
+
+.vision__image {
+  width: 50rem;
+  position: absolute;
+  top: 70%;
+  margin-left: 2rem;
+}
+
+.vision__card {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  right: 2rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50rem;
+  background: linear-gradient(to right, #000000, #00aabc);
+}
+
+.contact__heading {
+  letter-spacing: 0.8rem;
+}
+
+.contact__description {
+  width: 50%;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+/* About Us CSS ends---- */
+
+/* Services CSS */
+.Hero__Heading {
+  position: absolute;
+  font-size: 10rem;
+  padding-left: 2rem;
+  top: 30%;
+  letter-spacing: 1.5rem;
+  z-index: 1000;
+}
+
+/* Core Services */
+.core_services__container, .approach_section__container {
+  padding-top: 8rem;
+  --bs-gutter-x: 0rem;
+  position: relative;
+  padding-bottom: 15rem;
+}
+
+.core_services, .approach_section {
+  display: flex;
+  gap: 2rem;
+}
+
+.core_services_heading,.approach__section_heading {
+  font-size: 5rem;
+  letter-spacing: 1.2rem;
+}
+
+.core_services__icon, .approach__section_icon {
+  width: 8rem;
+}
+
+.core_services__description {
+  width: 55ch;
+}
+
+.bullet {
+  width: 0.8rem;
+}
+
+.core_services__info {
+  display: flex;
+  gap: 5rem;
+}
+
+.info__heading {
+  font-size: 1.5rem;
+}
+
+.info__description {
+  font-size: 1.1rem;
+}
+
+.info__text {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.info__image_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card */
+.industry_card__container {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 60%;
+  position: absolute;
+  top: 90%;
+  z-index: 1000;
+}
+
+.industry_card__heading, .product__card_heading, .approach__heading {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.industry__card_title, .product__card_title {
+  font-size: 5rem;
+  font-family: "Gilroy-Medium";
+}
+
+.industry__card_icon, .product__card_icon {
+  width: 5rem;
+}
+
+.industry__card_line, .product__card_line {
+  border: none;
+  border-top: 2px solid black;
+  width: 68%;
+  opacity: 100%;
+}
+
+.industry__card_desc, .product__card_desc {
+  font-size: 1.7rem;
+  width: 45ch;
+}
+
+.industry__card_content,.product__card_content {
+  background-color: #005862;
+  font-size: 1.2rem;
+}
+
+.content__box {
+  display: flex;
+  gap: 1rem;
+}
+
+.white__bullet > img {
+  width: 0.8rem;
+}
+
+.content__heading {
+  font-size: 2rem;
+}
+
+.content__description {
+  width: 40ch;
+}
+
+/* Product Page */
+.container-block {
+  height: 100rem;
+}
+
+.product-block {
+  height: 30rem;
+}
+
+.product__section {
+  position: relative;
+}
+
+/* Product Card */
+.product_card__container {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 75%;
+  top: 10%;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+.product_card__heading {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.product__card__box {
+  display: flex;
+  overflow: hidden;
+}
+
+.product__page {
+  height: 55rem;
+}
+
+/* Approach Section */
+.approach__section {
+  padding: 15rem 0rem;
+}
+
+.approach_section {
+  align-items: center;
+}
+
+.approach__desc {
+  width: 60ch;
+  font-size: 1.6rem;
+}
+
+.approach_section__container {
+  height: 100rem;
+  position: relative;
+}
+
+.approach__card_content {
+  position: relative;
+}
+
+.approach__card {
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
+  width: 50%;
+  transform: translateY(-40%);
+  position: absolute;
+  z-index: 1000;
+  margin-left: 2rem;
+}
+
+.approach__icon {
+  width: 5rem;
+}
+
+.approach__line {
+  border: none;
+  border-top: 3px solid black;
+  width: 60%;
+  opacity: 100%;
+}
+
+.approach__bg {
+  height: 35rem;
+}
+
+/* Contracting Section */
+.contracting__content {
+  display: flex;
+  align-items: center;
+}
+
+.contracting__heading {
+  font-size: 5rem;
+  letter-spacing: 1.1rem;
+  width: 18ch;
+}
+
+.contracting__icon {
+  width: 8rem;
+}
+
+.contracting__desc {
+  width: 60ch;
+}
+
+.contracting__image {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contract-image {
+  width: 60rem;
+}
