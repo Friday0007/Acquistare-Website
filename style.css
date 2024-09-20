@@ -1,16 +1,61 @@
 * {
-  /* font-family: 'Gilroy-Bold', sans-serif;
-    font-family: 'Gilroy-Heavy', sans-serif;
-    font-family: 'Gilroy-Light', sans-serif;
-    font-family: 'Gilroy-Medium', sans-serif; */
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: 'Noto Sans', Arial;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.mobile-nav__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: white !important;
 }
 
 /* About Us CSS---- */
 
+
 .gradient-navbar {
   background: linear-gradient(to right, #000000, #00aabc, #00aabc2e);
 }
+
 
 .navbar__Logo {
   width: 10rem;
@@ -36,6 +81,7 @@
 
 .active {
   color: #00aabc;
+  font-weight: bold;
 }
 
 .gradient-overlay {
@@ -50,7 +96,7 @@
 /* Page 2 */
 .page2 {
   background: linear-gradient(to right, #000000, #00aabc);
-  padding: 10rem 3rem;
+  padding: 10rem 2rem;
 }
 
 .motion__element {
@@ -101,7 +147,6 @@
 .mission__title,
 .vision__title, .approach__title {
   font-size: 5rem;
-  font-family: "Gilroy-Medium";
 }
 
 .btn {
@@ -169,7 +214,8 @@
   padding-left: 2rem;
   top: 30%;
   letter-spacing: 1.5rem;
-  z-index: 1000;
+  z-index: 500;
+  color: white !important;
 }
 
 /* Core Services */
@@ -244,7 +290,6 @@
 
 .industry__card_title, .product__card_title {
   font-size: 5rem;
-  font-family: "Gilroy-Medium";
 }
 
 .industry__card_icon, .product__card_icon {
@@ -287,7 +332,7 @@
 
 /* Product Page */
 .container-block {
-  height: 100rem;
+  height: 110rem;
 }
 
 .product-block {
@@ -301,7 +346,7 @@
 /* Product Card */
 .product_card__container {
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.495);
-  width: 75%;
+  width: 70%;
   top: 10%;
   position: absolute;
   right: 0;
@@ -403,3 +448,711 @@
 
 
 /* Media Queries */
+@media (max-width: 670px) {
+  /* About Page */
+  .motion__element {
+    width: 100% !important;
+    margin: 2rem auto;
+  }
+
+  .page2__heading {
+    text-align: center;
+  }
+
+  .mission__card, .vision__card {
+    top: 100% !important;
+    width: auto !important;
+    left: 0;
+    right: 0;
+    margin: 2rem;
+  }
+
+  .mission__card  {
+    transform: translateY(30%);
+  }
+
+  #mission__title_id, #vision__title_id {
+    font-size: 1.5rem !important;
+    font-weight: bolder;
+  }
+
+  #vision__container_id {
+    margin-top: 55rem !important;
+  }
+
+  .vision__image {
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .vision__card {
+    transform: translateY(45%);
+  }
+
+  #about_footer_id {
+    margin-top: 50rem !important;
+  }
+
+  /* Services Page */
+  #Hero__Heading__id{
+    font-size: 1.7rem !important;
+    letter-spacing: 1.3rem;
+    top: 40%;
+  }
+
+  #core_services_heading_id, .approach__section_heading, #contracting__heading_id  {
+    font-size: 1.5rem !important;
+    width: auto !important;
+    letter-spacing: normal;
+  }
+
+  .approach_section {
+    gap: 1rem !important;
+  }
+
+  #core_services_id, .contracting__content {
+    padding: 2rem !important;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #core_services__icon_id, .approach__section_icon, #contracting__icon_id {
+    width: 3rem !important;
+  }
+
+  #core__desc {
+    padding: 0rem 2rem !important;
+    padding-top: 2rem !important;
+    text-align: justify;
+  }
+  
+  .core_services__info  {
+    padding: 2rem !important;
+  }
+
+  .info__description  {
+    text-align: justify;
+  }
+
+  #info__image_id {
+    width: 100% !important;
+  }
+
+  .industry_card__container, .product_card__container   {
+    width: auto !important;
+    margin: 2rem !important;
+  }
+
+  #industry__card_title_id, #product__card_title_id, 
+  #approach__title_id{
+    font-size: 1.5rem !important;
+  }
+
+  #industry__card_icon_id, #product__card_icon_id,
+  #approach__icon_id {
+    width: 3rem !important;
+  }
+
+  .content__description  {
+    word-wrap: break-word;
+    width: auto !important;
+  }
+
+  #container-block_id {
+    height: 65rem !important;
+  }
+
+  .product_card__container  {
+   right: 0%; 
+   left: 0%; 
+  }
+
+  .product_desc {
+    width: 30ch !important;
+  }
+
+  .approach_section {
+    padding: 2rem !important;
+    gap: 0rem;
+  }
+
+  .approach__desc {
+    padding: 2rem !important;
+  }
+
+  .approach__card_content  {
+    --bs-gutter-x: 0rem !important;
+  }
+
+  .approach__card  {
+    margin: 0rem !important;
+    width: auto !important;
+    margin: 2rem !important;
+  }
+
+  .approach__content  {
+    text-align: justify;
+  }
+
+  .approach__bg {
+    height: 30rem;
+  }
+
+  #contracting__heading_id {
+    width: auto;
+    letter-spacing: normal;
+  }
+
+  .contracting__desc  {
+    padding: 2rem !important;
+  }
+
+  .contracting__image {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-top: 5rem;
+  }
+
+  #contract-image_id {
+    width: 100% !important;
+    display: block;
+  }
+
+  .contact__description {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 908px) {
+  /* About Page */
+  .TopNav > div {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+
+  .mobile-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mobile-flex .flex-shrink-0 {
+    order: -1; /* Puts the image on top */
+  }
+
+  .HeroSection__desc {
+    text-align: justify;
+  }
+
+  .heading__line {
+    margin-bottom: 0rem;
+  }
+
+  .mission__heading, .mission__content, .mission__btn, .vision__heading, .vision__content, .vision__btn  {
+    padding: 2rem !important;
+  }
+
+  .mission__title, .vision__title {
+    font-size: 3rem !important;
+  }
+
+  .mission__content, .vision__content  {
+    font-size: 0.9rem !important;
+    text-align: justify;
+  }
+
+  .vision__container {
+    margin-top: 35rem !important;
+  }
+
+  .footer  {
+    padding: 2rem !important;
+  }
+
+  .contact__description {
+    text-align: justify;
+  }
+
+  .address {
+    width: 40ch;
+  }
+
+  /* Services */
+  .Hero__Heading {
+    font-size: 6rem !important;
+  }
+
+  .core_services__description {
+    width: auto;
+  }
+
+  #core__desc {
+    font-size: 1.1rem !important;
+  }
+
+  .core_services__container {
+    padding-top: 2rem !important;
+  }
+
+  .core_services__info  {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info__image_container {
+    align-items: center;
+  }
+
+  .box-1 > .info__image {
+    width: auto !important;
+  }
+
+  .industry_card__heading {
+    justify-content:flex-start !important;
+  }
+
+  .industry_card__heading, .product_card__heading, .approach__heading {
+    padding: 2rem !important;
+  }
+
+  .industry__card_line, .product__card_line, .approach__line   {
+    margin: 0rem !important;
+    margin-left: 2rem !important;
+  } 
+
+  .industry__card_desc, .product__card_desc, .approach__content {
+    padding-top: 0rem !important;
+    padding: 2rem !important;
+  }
+  
+  #industry_card_1, .product_card__container > .product__card_desc {
+    font-size: 0.9rem !important;
+    width: auto;
+  }
+
+  .industry__card_content, .product__card_content {
+    padding: 2rem !important;
+  }
+
+  .content__heading {
+    font-size: 1.2rem !important;
+  }
+
+  #content_desc_id  {
+    font-size: 0.9rem !important;
+  }
+
+  .industry__card_content > .content__box {
+    margin-bottom: 1.1rem !important;
+  }
+
+  #content__box {
+    margin-bottom: 1.1rem !important;
+  }
+
+  .content__box > .white__bullet {
+    padding-top: 0rem !important;
+  }
+
+  .industry__card_btn  {
+    padding: 2rem !important;
+  }
+
+  .container-block {
+    height: 55rem !important;
+  }
+
+  #product__page {
+    height: 35rem !important;
+  }
+
+  .approach__section {
+    padding: 8rem 0rem !important;
+  }
+
+  .approach__desc {
+    font-size: 1.1rem !important;
+    width: auto !important;
+    text-align: justify;
+  }
+
+  .approach_section__container {
+    height: 65rem !important;
+  }
+
+  .approach__content {
+    font-size: 0.9rem !important;
+  }
+
+  .approach__line  {
+    margin-bottom: 2rem !important;
+  }
+
+  .approach__btn  {
+    padding: 2rem !important;
+  }
+
+  .contracting__desc  {
+    font-size: 1.1rem !important;
+    width: auto !important;
+    text-align: justify;
+  }
+
+  .contact__info {
+    margin-top: 3rem;
+  }  
+
+  .contact__info  {
+    flex-direction: column;
+  }
+}
+
+/* md */
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .secondNav {
+    display: none;
+  }
+
+  .hamburger {
+    z-index: 1000;
+  }
+
+  .page2 {
+    padding: 5rem 2rem;
+  }
+
+  .page2__heading {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .motion__element {
+    width: 25rem;
+  }
+
+  .HeroSection__desc {
+    font-size: 1rem;
+  }
+
+  .mission__image, .vision__image  {
+    width: 30rem !important;
+  }
+
+  .mission__card  {
+    width: 55%;
+  }
+
+  .vision__container {
+    margin-top: 40rem;
+  }
+
+  .vision__section {
+    height: 20rem !important;
+  }
+
+  .footer {
+    margin-top: 35rem !important;
+  }
+
+  /* Services Page */
+  .Hero__Heading  {
+    padding: 0rem !important;
+  }
+
+  .Hero__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .core_services__description  {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .core_services_heading  {
+  font-size: 3.5rem !important;
+  }
+
+  .core_services__icon {
+    width: 5rem !important;
+  }
+
+  .info__image {
+    width: 25rem !important;
+  }
+
+  .custom__line {
+    padding: 5rem 0rem;
+  }
+
+  .industry__card_title, .product__card_title, .approach__title {
+    font-size: 3rem !important;
+  }
+
+  .industry__card_icon, .product__card_icon, .approach__icon {
+    width: 3.5rem !important;
+  }
+
+  .industry__card_desc, .product__card_desc {
+    font-size: 1.3rem !important;
+  }
+
+  .industry_card__container  {
+    width: 70%;
+  }
+
+  .approach__section_heading {
+    font-size: 3.5rem ;
+  }
+
+  .approach__section_icon {
+    width: 5rem;
+  }
+
+  .contracting__heading {
+    font-size: 3.5rem !important;
+  }
+
+  .contracting__icon {
+    width: 5rem !important;
+  }
+
+  .contracting__desc {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .contract-image {
+    width: 45rem !important;
+  }
+
+  .service-footer {
+    margin-top: 0rem !important;
+  }
+}
+
+
+@media (max-width: 1133px) {
+  .product__card__box {
+    flex-direction: column;
+  }
+
+  .product_card__container  {
+    width: 60%;
+  }
+
+  .product__page {
+    height: 70rem !important;
+  }
+}
+
+/* md */
+@media (max-width: 1280px) {
+  /* About Us  */
+  .nav-link, .navbar-brand {
+    font-size: 0.9rem;
+  }
+
+  .navbar__Logo {
+    width: 8rem;
+  }
+
+  .nav__icons {
+    width: 1rem;
+  }
+  
+  .magnify {
+    width: 1.3rem;
+  }
+
+  .HeroSection__desc {
+    font-size: 1.1rem !important;
+  }
+
+  .mission__title, .vision__title {
+    font-size: 4.5rem;
+  }
+
+  .mission__content, .vision__content {
+    font-size: 1rem;
+  }
+
+  .btn  {
+    font-size: 0.9rem;
+  }
+
+  .vision__section {
+    height: 30rem;
+  }
+
+  .vision__image, .mission__image {
+    width: 40rem;
+  }
+
+  .footer {
+    margin-top: 40rem;
+  }
+
+  .img {
+    width: 13rem;
+  }
+
+  .contact__description {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    font-size: 0.8rem;
+  }
+
+  /* Services Page */
+  .Hero__Heading  {
+    font-size: 8rem;
+  }
+
+  .core_services__container {
+    padding-top: 5rem;
+  }
+
+  .core_services_heading, .contracting__heading  {
+    font-size: 4rem;
+  }
+
+  .core_services__icon, .contracting__icon {
+    width: 6rem;
+  }
+
+  .core_services__description  {
+    font-size: 1.4rem !important;
+  }
+
+  .info__heading  {
+    font-size: 1.4rem;
+  }
+
+  .info__description  {
+    font-size: 1rem;
+  }
+
+  .info__image {
+    width: 35rem;
+  }
+
+  .custom__line_2 > .custom__line {
+    padding: 7rem 0rem;
+  }
+
+  .industry__card_title, .product__card_title, .approach__title {
+    font-size: 4rem;
+  }
+
+  .industry_card__heading  {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .industry__card_icon, .product__card_icon, .approach__icon {
+    width: 4rem;
+  }
+
+  .industry__card_desc, .product__card_desc {
+    font-size: 1.5rem;
+  }
+
+  .content__heading  {
+    font-size: 1.5rem;
+  }
+
+  .content__description  {
+    font-size: 1.2rem !important;
+    width: 50ch;
+  }
+
+  .container-block {
+    height: 90rem;
+  }
+
+  .white__bullet  {
+    padding-top: 0.3rem !important;
+  }
+
+  .spacer {
+    width: 450px;
+  }
+
+  .product_card__container  {
+    width: 75%;
+  }
+
+  .product__page {
+    height: 45rem;
+  }
+
+  .approach__section {
+    padding: 10rem 0rem;
+  }
+
+  .approach_section {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .approach__desc, .contracting__desc  {
+    width: 70ch;
+    font-size: 1.4rem;
+  }
+
+  .approach_section__container {
+    height: 80rem;
+  }
+
+  .approach__content  {
+    font-size: 1.1rem;
+  }
+
+  .contracting__heading {
+    width: 25ch;
+  }
+
+  .contract-image {
+    width: 55rem;
+  }
+}
+
+/* Lg */
+@media (min-width: 1536px) {
+  /* About Us Page */
+  .TopNav, .secondNav, .Hero__Container, .page2, .mission__container, .vision__container, .footer{
+    width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Services Page */
+  .core_services__container,.product__section,.approach_section__container,.approach__card_content,.approach__bg,.contracting__section , .footer{
+    width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-block {
+    width: 1536px;
+    margin: auto;
+  }
+}

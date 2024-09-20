@@ -11,59 +11,76 @@
       crossorigin="anonymous"
     />
 
-    <!-- Gilroy Fonts -->
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <!-- Notosans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary gradient-navbar">
-      <div class="container-fluid p-2 mx-5">
+    <nav class="navbar bg-body-tertiary gradient-navbar TopNav">
+      <div class="container-fluid p-2 mx-5 d-flex justify-content-between">
         <a class="navbar-brand" href="#">
           <img class="navbar__Logo" src="/Assets/Logo.png" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown me-3">
-              <a class="nav-link dropdown-toggle d-flex align-items-center fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="nav__icons" src="/Assets/location__icon.svg" alt="">
-                Find a Location
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center fw-bold" href="#" role="button">
-                <img class="nav__icons magnify" src="/Assets/magnify.svg" alt="">
-                Search
-              </a>
-            </li>
-          </ul>
+        <div class="d-flex align-items-center">
+          <!-- Find a Location -->
+          <div class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="nav__icons" src="/Assets/location__icon.svg" alt="">
+              <div class="hide">Find a Location</div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    
+          <!-- Search -->
+          <div class="nav-item">
+            <a class="nav-link d-flex align-items-center fw-bold" href="#" role="button">
+              <img class="nav__icons magnify" src="/Assets/magnify.svg" alt="">
+              <div class="hide">Search</div>
+            </a>
+          </div>
+
+          <div class="nav-item dropdown hamburger">
+            <a class="nav-link d-flex align-items-center ms-3 dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="nav__icons magnify" src="/Assets/burger-menu-svgrepo-com.svg" alt="">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="home.html">Home</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="services.html">Services</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          
         </div>
       </div>
     </nav>
 
+    
+
     <!-- NavBar Links -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container secondNav">
+      <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <ul class="navbar-nav mx-auto p-3">
-            <li><a class="navbar-brand m-5" href="#">Home</a></li>
-            <li><a class="navbar-brand m-5 active" href="/about.html">About Us</a></li>
-            <li><a class="navbar-brand m-5" href="/services.html">Services</a></li>
-            <li><a class="navbar-brand m-5" href="#">Contact Us</a></li>
+          <ul class="navbar-nav mx-auto p-3 d-flex flex-row justify-content-center">
+            <li class="nav-item"><a class="navbar-brand m-5" href="#">Home</a></li>
+            <li class="nav-item"><a class="navbar-brand m-5 active" href="/about.html">About Us</a></li>
+            <li class="nav-item"><a class="navbar-brand m-5" href="/services.html">Services</a></li>
+            <li class="nav-item"><a class="navbar-brand m-5" href="#">Contact Us</a></li>
           </ul>
         </div>
       </nav>
     </div>
+    
 
     <div class="Hero__Container">
       <img
@@ -79,9 +96,9 @@
     <!-- HeroSection ends -->
 
     <div class="container-fluid mx-auto page2">
-      <div class="d-flex p-2 fs-1 fw-bold text-light">ACQUISTARE LIMITED</div>
-      <div class="d-flex align-items-center column-gap-5">
-        <div class="flex-grow-1 text-light fs-5">
+      <div class="d-flex p-2 fs-1 fw-bold text-light page2__heading">ACQUISTARE LIMITED</div>
+      <div class="d-flex align-items-center column-gap-5 mobile-flex">
+        <div class="flex-grow-1 text-light fs-5 HeroSection__desc">
           ACQUISTARE LIMITED is a UK-based purchasing and Supply Chain company
           established to deliver unparalleled consumer services across various
           industry sectors. Our primary focus is the sectors of Oil and Gas,
@@ -106,7 +123,7 @@
       </div>
 
       <div class="container-fluid bg-white p-0">
-        <div id="carouselExampleIndicators" class="carousel slide mission__image" >
+        <div id="carouselExampleIndicators" class="carousel slide mission__image" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -125,11 +142,12 @@
           </div>
         </div>
         
+        
 
         <!-- Mission Card -->
         <div class="mission__card rounded-5 bg-white">
           <div class="mission__heading p-5">
-            <div class="mission__title">MISSION</div>
+            <div class="mission__title" id="mission__title_id">MISSION</div>
             <hr class="heading__line" />
           </div>
           <div class="mission__content p-5 text-light">
@@ -149,14 +167,14 @@
     </div>
 
     <!-- Vision Page Section -->
-    <div class="container-fluid p-0 vision__container">
+    <div class="container-fluid p-0 vision__container" id="vision__container_id">
       <div class="container-fluid bg-black p-0 vision__section"></div>
       <div class="container-fluid bg-white p-0">
-        <div id="carouselExampleIndicators" class="carousel slide vision__image" >
+        <div id="carouselExampleIndicators2" class="carousel slide vision__image" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -174,7 +192,7 @@
         <!-- Mission Card -->
         <div class="vision__card rounded-5 bg-white">
           <div class="vision__heading p-5">
-            <div class="vision__title">VISION</div>
+            <div class="vision__title" id="vision__title_id">VISION</div>
             <hr class="heading__line" />
           </div>
           <div class="vision__content p-5 text-light">
@@ -192,9 +210,9 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid footer p-5">
+    <div class="container-fluid footer p-5" id="about_footer_id">
       <div class="p-0 mx-0">
-        <a href="">
+        <a href="#">
           <img src="/Assets/Logo.png" class="img" alt="..." />
         </a>
       </div>
@@ -213,23 +231,23 @@
       <div class="contact__info text-light">
         <div class="info__1">
           <div>
-            <div class="mb-2">Phone</div>
-            <div class="mb-5">+44 303 040 1181</div>
+            <div class="mb-2 text-white">Phone</div>
+            <div class="mb-5 details text-white">+44 303 040 1181</div>
           </div>
           <div>
-            <div class="mb-2">Email</div>
-            <div class="mb-5">info@acquistare.co.uk</div>
+            <div class="mb-2 text-white">Email</div>
+            <div class="mb-5 details text-white">info@acquistare.co.uk</div>
           </div>
       </div>
 
         <div class="info__2">
           <div>
-            <div class="mb-2">Location</div>
-            <div class="mb-5">Suite 4995 Unit 3A, 34-35 Hatton Garden, Holborn, London, EC1N 8DX, United Kingdom.</div>
+            <div class="mb-2 text-white">Location</div>
+            <div class="mb-5 details address text-white">Suite 4995 Unit 3A, 34-35 Hatton Garden, Holborn, London, EC1N 8DX, United Kingdom.</div>
           </div>
           <div>
-            <div class="mb-2">Website</div>
-            <div class="mb-5"><a href="" class="text-light">www.acquistare.co.uk</a></div>
+            <div class="mb-2 text-white">Website</div>
+            <div class="mb-5 details text-white"><a href="" class="text-light">www.acquistare.co.uk</a></div>
           </div>
         </div>
       </div>
@@ -242,5 +260,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
